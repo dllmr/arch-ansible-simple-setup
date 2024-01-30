@@ -1,12 +1,14 @@
 # arch-ansible-simple-setup
 A collection of Ansible playbooks for quick Arch Linux setup post-install. Demonstrates package installation from the mainstream Arch repos, AUR and Flatpak. Also demonstrates GNOME desktop settings changes.
 
-## Important Note
+## Important Notes
 These playbooks were set up for my specific requirements. These requirements include use of the GNOME desktop, plus some locale packages for UK use. You will almost certainly want to modify these playbooks before using them!
 
 However, they should be easy to understand and provide an excellent starting point for getting your Arch system exactly how you want it.
 
 As it stands, these playbooks are only configured for use locally on the machine being set up.
+
+As you know, Ansible playbooks are designed to be idempotent in use. This means you should be able to safely repeat any playbook as often as you choose, which will be useful as you modify it for your exact needs.
 
 ## Prerequisites
 Arch installation is complete. I recommend `archinstall`.
@@ -33,6 +35,8 @@ Select only the playbooks you need from this list. The first one is probably of 
 
 ### `core.yml`
 Installs a base set of packages from the mainstream Arch repos, inclusing Firefox, LibreOffice, GIMP, VLC and others.
+
+Also removes some packages that are part of the default GNOME install, but which I will not be using.
 
 ### `aur.yml`
 Installs packages from the Arch User Repository (AUR), including Chrome, VS Code and others.
