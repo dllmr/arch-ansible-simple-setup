@@ -1,0 +1,13 @@
+---
+- name: flatpak.yml - install flatpaks
+  hosts: local
+  become: yes
+  
+  tasks:
+    - name: install flatpaks
+      flatpak:
+        name:
+          - com.anydesk.Anydesk
+          - org.freeplane.App
+          - org.qgis.qgis/x86_64/stable
+          - re.sonny.Workbench

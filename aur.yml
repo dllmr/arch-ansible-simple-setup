@@ -1,0 +1,33 @@
+---
+- name: aur.yml - install packages from AUR
+  hosts: local
+  
+  tasks:
+    - name: install yay to get started
+      kewlfft.aur.aur:
+        name: yay
+
+    - name: install packages using yay
+      kewlfft.aur.aur:
+        name:
+          - paru-bin
+          - pamac-aur
+          - kora-icon-theme
+          - google-chrome
+          - visual-studio-code-bin
+          - dropbox
+          - nautilus-dropbox
+          - zoom
+          - teams-for-linux
+          - gitkraken
+          - nordvpn-bin
+          - extension-manager
+          - menulibre
+          - localsend-bin
+          - spotify
+          - dynalist-desktop
+          - obsidian
+          - searchmonkey-gtk
+          - get_iplayer
+        use: yay
+

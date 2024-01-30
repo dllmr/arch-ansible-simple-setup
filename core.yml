@@ -1,0 +1,59 @@
+---
+- name: core.yml - Arch Linux base setup
+  hosts: local
+  become: yes
+  
+  tasks:
+    - name: update Arch
+      pacman:
+        update_cache: yes
+        upgrade: yes
+
+    - name: remove unwanted packges
+      pacman:
+        name:
+          - gnome-calendar
+          - gnome-contacts
+          - gnome-shell-extensions
+        state: absent
+        
+    - name: install essential packages
+      pacman:
+        update_cache: yes
+        name:
+          - dconf-editor
+          - usbutils
+          - fwupd
+          - fwupd-efi
+          - pacman-contrib
+          - flatpak
+          - gnome-terminal
+          - gnome-themes-extra
+          - eog
+          - fastfetch
+          - base-devel
+          - git
+          - bitwarden
+          - imagemagick
+          - gimp
+          - gedit
+          - gedit-plugins
+          - libreoffice-fresh
+          - libreoffice-fresh-en-gb
+          - pdfarranger
+          - mupdf
+          - pdftk
+          - celluloid
+          - mpv
+          - vlc
+          - yt-dlp
+          - audacity
+          - firefox
+          - firefox-i18n-en-gb
+          - thunderbird
+          - thunderbird-i18n-en-gb
+          - filezilla
+          - transmission-gtk
+          - python-psutil
+          - android-tools
+          - android-udev

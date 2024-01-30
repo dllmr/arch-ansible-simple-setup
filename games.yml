@@ -1,0 +1,19 @@
+---
+- name: games.yml - a few games
+  hosts: local
+  become: yes
+  
+  tasks:
+    - name: update Arch
+      pacman:
+        update_cache: yes
+        upgrade: yes
+        
+    - name: install games
+      pacman:
+        update_cache: yes
+        name:
+          - openttd
+          - openttd-opengfx
+          - openttd-opensfx
+          - gnome-sudoku

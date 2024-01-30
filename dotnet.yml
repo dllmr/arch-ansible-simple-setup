@@ -1,0 +1,22 @@
+---
+- name: dotnet.yml - packages for .NET execution and development
+  hosts: local
+  become: yes
+  
+  tasks:
+    - name: update Arch
+      pacman:
+        update_cache: yes
+        upgrade: yes
+        
+    - name: install .NET packages
+      pacman:
+        update_cache: yes
+        name:
+          - dotnet-host
+          - dotnet-runtime
+          - dotnet-sdk
+          - dotnet-targeting-pack
+          - dotnet-runtime-6.0
+          - dotnet-sdk-6.0
+          - dotnet-targeting-pack-6.0   
