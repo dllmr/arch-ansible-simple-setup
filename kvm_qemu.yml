@@ -1,0 +1,41 @@
+---
+- name: kvm_qemu.yml - set up KVM and QEMU for virtualization
+  hosts: local
+  become: yes
+
+  tasks:
+    - name: Update Arch
+      pacman:
+        update_cache: yes
+        upgrade: yes
+        
+    - name: Install necessary packages for KVM and QEMU
+      pacman:
+        name:
+          - iptables-nft
+          - qemu-desktop
+          - virt-manager
+          - virt-viewer
+          - dnsmasq
+          - vde2
+          - bridge-utils
+          - openbsd-netcat
+        state: present
+        
+    - name: Start and enable libvirtd service
+      systemd:
+        name: libvirtd
+        state: started
+        enabled: yes
+
+    - name: Add current user to libvirt group
+      user:
+        name: "{{ lookup('env', 'USER') }}"
+        groups: libvirt
+        append: yes
+
+    - name: Add current user to kvm group
+      user:
+        name: "{{ lookup('env', 'USER') }}"
+        groups: kvm
+        append: yes

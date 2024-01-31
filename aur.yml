@@ -3,11 +3,11 @@
   hosts: local
   
   tasks:
-    - name: install yay to get started
+    - name: Install yay to get started
       kewlfft.aur.aur:
         name: yay
 
-    - name: install packages using yay
+    - name: Install AUR packages using yay
       kewlfft.aur.aur:
         name:
           - paru-bin
@@ -29,5 +29,5 @@
           - obsidian
           - searchmonkey-gtk
           - get_iplayer
+        state: present
         use: yay
-

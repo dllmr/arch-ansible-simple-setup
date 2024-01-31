@@ -1,0 +1,15 @@
+---
+- name: virtio-win.yml - install KVM/QEMU virtualization drivers for Windows
+  hosts: local
+  
+  tasks:
+    - name: Install yay to get started
+      kewlfft.aur.aur:
+        name: yay
+
+    - name: Install virtio drivers for Windows
+      kewlfft.aur.aur:
+        name:
+          - virtio-win
+        state: present
+        use: yay

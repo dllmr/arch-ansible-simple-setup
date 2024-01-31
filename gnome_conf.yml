@@ -4,72 +4,72 @@
   gather_facts: no
   
   tasks:
-    - name: show day of week
+    - name: Show day of week in top bar
       community.general.dconf:
         key: "/org/gnome/desktop/interface/clock-show-weekday"
         value: "true"
         
-    - name: show seconds
+    - name: Show seconds in top bar
       community.general.dconf:
         key: "/org/gnome/desktop/interface/clock-show-seconds"
         value: "true"
 
-    - name: show battery %
+    - name: Show battery % in top bar
       community.general.dconf:
         key: "/org/gnome/desktop/interface/show-battery-percentage"
         value: "true"
 
-    - name: disable hot corner
+    - name: Disable hot corner
       community.general.dconf:
         key: "/org/gnome/desktop/interface/enable-hot-corners"
         value: "false"
 
-    - name: show maximize and minimize buttons
+    - name: Show maximize and minimize buttons in window borders
       community.general.dconf:
         key: "/org/gnome/desktop/wm/preferences/button-layout"
         value: "'appmenu:minimize,maximize,close'"
 
-    - name: enable dark theme
+    - name: Enable dark theme
       community.general.dconf:
         key: "/org/gnome/desktop/interface/color-scheme"
         value: "'prefer-dark'"
         
-    - name: enable dark theme (legacy)
+    - name: Enable dark theme (legacy apps)
       community.general.dconf:
         key: "/org/gnome/desktop/interface/gtk-theme"
         value: "'Adwaita-dark'"
         
-    - name: show option to create link
+    - name: Show option in Nautilus to create link
       community.general.dconf:
         key: "/org/gnome/nautilus/preferences/show-create-link"
         value: "true"
         
-    - name: show option to delete permanently
+    - name: Show option in Nautilus to delete permanently
       community.general.dconf:
         key: "/org/gnome/nautilus/preferences/show-delete-permanently"
         value: "true"
 
-    - name: show tree view in list
+    - name: Show tree view in list view in Nautilus
       community.general.dconf:
         key: "/org/gnome/nautilus/list-view/use-tree-view"
         value: "true"
         
-    - name: prevent sleep on AC power
+    - name: Prevent sleep on AC power
       community.general.dconf:
         key: "/org/gnome/settings-daemon/plugins/power/sleep-inactive-ac-type"
         value: "'nothing'"
         
-    - name: prevent sleep on battery power
+    - name: Prevent sleep on battery power
       community.general.dconf:
         key: "/org/gnome/settings-daemon/plugins/power/sleep-inactive-battery-type"
         value: "'nothing'"
 
-    - name: power button should turn off
+    - name: Power button should turn off
       community.general.dconf:
         key: "/org/gnome/settings-daemon/plugins/power/power-button-action"
         value: "'interactive'"
 
-    - name: set screen power off time
+    - name: Set screen power off time (15 minutes)
       community.general.dconf:
         key: "/org/gnome/desktop/session/idle-delay"
         value: "uint32 900"   

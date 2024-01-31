@@ -4,12 +4,12 @@
   become: yes
   
   tasks:
-    - name: update Arch
+    - name: Update Arch
       pacman:
         update_cache: yes
         upgrade: yes
         
-    - name: install .NET packages
+    - name: Install .NET packages
       pacman:
         update_cache: yes
         name:
@@ -19,4 +19,5 @@
           - dotnet-targeting-pack
           - dotnet-runtime-6.0
           - dotnet-sdk-6.0
-          - dotnet-targeting-pack-6.0   
+          - dotnet-targeting-pack-6.0
+        state: present        

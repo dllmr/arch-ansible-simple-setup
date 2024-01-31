@@ -56,3 +56,13 @@ Installs packages for .NET development. Most likely you won't want these, but I 
 
 ### `gnome_conf.yml`
 Makes some GNOME desktop config changes, including the addition of maximize and minimize buttons to window borders, and enabling permanent delete in Nautilus file manager.
+
+### `kvm_qemu.yml`
+Installs packages for virtualization support.
+
+It's possible this playbook will initially fail because the default Arch install includes the `iptables` package rather than the newer `iptables-nft`. In this case you will need to replace one with the other before proceeding: -
+
+`sudo pacman -S iptables-nft`
+
+### `virtio-win.yml`
+Installs virtualization drivers for Windows guest VMs from the AUR.
