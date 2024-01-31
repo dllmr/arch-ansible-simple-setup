@@ -46,6 +46,7 @@
           - celluloid
           - mpv
           - vlc
+          - streamlink
           - yt-dlp
           - audacity
           - firefox
