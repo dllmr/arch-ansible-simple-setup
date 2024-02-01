@@ -27,6 +27,8 @@
           - fwupd-efi
           - pacman-contrib
           - flatpak
+          - cups
+          - cups-pdf
           - gnome-terminal
           - gnome-themes-extra
           - eog
@@ -60,3 +62,9 @@
           - android-tools
           - android-udev
         state: present
+
+    - name: Start and enable CUPS service
+      systemd:
+        name: cups
+        state: started
+        enabled: yes
