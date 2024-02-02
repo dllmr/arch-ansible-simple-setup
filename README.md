@@ -11,11 +11,13 @@ As it stands, these playbooks are only configured for use locally on the machine
 As you know, Ansible playbooks are designed to be idempotent in use. This means you should be able to safely repeat any playbook as often as you choose, which will be useful as you modify it for your exact needs.
 
 ## Prerequisites
-Arch installation is complete. I recommend `archinstall`.
+Arch must have been successfully installed along with a graphical desktop environment. `archinstall` is recommended. These playbooks should work equally well with distros based on Arch, and have been tested successfully with EndeavourOS.
 
 The `ansible` package must be installed from the Arch repos. This could be added as an additional package when running `archinstall`, or installed later using `pacman`.
 
 `git` must also be installed before this repo can be cloned (unless you prefer the option of downloading a ZIP file from GitHub).
+
+Playbooks that work with the AUR have an additional prerequisite - please check the list below.
 
 ## Quick Start
 1. Make sure you've read and understood everything above.
