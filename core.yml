@@ -68,3 +68,9 @@
         name: cups
         state: started
         enabled: yes
+        
+    - name: Add current user to video group - workaround for https://gitlab.gnome.org/GNOME/snapshot/-/issues/48
+      user:
+        name: "{{ lookup('env', 'USER') }}"
+        groups: video
+        append: yes
