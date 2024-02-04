@@ -25,6 +25,7 @@
           - usbutils
           - fwupd
           - fwupd-efi
+          - p7zip
           - pacman-contrib
           - flatpak
           - cups
