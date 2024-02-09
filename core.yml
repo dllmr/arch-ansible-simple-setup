@@ -15,6 +15,7 @@
           - gnome-calendar
           - gnome-contacts
           - gnome-shell-extensions
+          - evolution-data-server
         state: absent
         
     - name: Install essential packages
