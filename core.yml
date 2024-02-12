@@ -24,6 +24,7 @@
         name:
           - dconf-editor
           - usbutils
+          - bluez-utils
           - fwupd
           - fwupd-efi
           - p7zip
