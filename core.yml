@@ -46,6 +46,7 @@
           - libreoffice-fresh
           - libreoffice-fresh-en-gb
           - pdfarranger
+          - img2pdf
           - mupdf
           - pdftk
           - celluloid
