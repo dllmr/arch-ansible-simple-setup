@@ -34,6 +34,7 @@
           - cups-pdf
           - gnome-terminal
           - gnome-themes-extra
+          - python-nautilus
           - eog
           - fastfetch
           - base-devel
