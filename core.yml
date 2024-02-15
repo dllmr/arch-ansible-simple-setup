@@ -28,6 +28,7 @@
           - fwupd
           - fwupd-efi
           - p7zip
+          - xclip
           - pacman-contrib
           - flatpak
           - cups
