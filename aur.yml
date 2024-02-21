@@ -31,7 +31,6 @@
           - spotify
           - dynalist-desktop
           - obsidian
-          - searchmonkey-gtk
           - get_iplayer
         state: present
         use: yay
