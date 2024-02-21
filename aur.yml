@@ -17,6 +17,7 @@
           - google-chrome
           - visual-studio-code-bin
           - typora
+          - pandoc-bin
           - dropbox
           - nautilus-dropbox
           - turtle
