@@ -37,6 +37,7 @@
           - gnome-themes-extra
           - python-nautilus
           - catfish
+          - ghex
           - eog
           - fastfetch
           - base-devel
