@@ -45,12 +45,14 @@
           - bitwarden
           - imagemagick
           - gimp
+          - inkscape
           - gcolor3
           - gedit
           - gedit-plugins
           - glow
           - libreoffice-fresh
           - libreoffice-fresh-en-gb
+          - scribus
           - pdfarranger
           - img2pdf
           - mupdf
