@@ -28,6 +28,8 @@
           - fwupd
           - fwupd-efi
           - p7zip
+          - ripgrep
+          - ripgrep-all
           - xclip
           - pacman-contrib
           - flatpak
