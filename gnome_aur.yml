@@ -1,0 +1,19 @@
+---
+- name: gnome_aur.yml - install GNOME specific packages from AUR
+  hosts: local
+  
+  tasks:
+    - name: Install yay to get started
+      kewlfft.aur.aur:
+        name: yay
+
+    - name: Install AUR packages using yay
+      kewlfft.aur.aur:
+        name:
+          - gnome-network-displays
+          - kora-icon-theme
+          - nautilus-dropbox
+          - turtle
+          - extension-manager
+        state: present
+        use: yay

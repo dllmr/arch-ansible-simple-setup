@@ -52,10 +52,14 @@ Installs a small number of Flatpaks.
 Installs a couple of games from mainstream Arch repos.
 
 ### `dotnet.yml`
-Installs packages for .NET development. Most likely you won't want these, but I need them for some of my development work.
+Installs packages for .NET development. In most cases these will not be needed.
+
+### `gnome_aur.yml`
+
+Installs some packages from the AUR that are specific to GNOME. Please run the GNOME package playbook (`gnome_pkg`) before this one. The `ansible-aur` collection should also be installed - see above.
 
 ### `gnome_conf.yml`
-Makes some GNOME desktop config changes, including the addition of maximize and minimize buttons to window borders, and enabling permanent delete in Nautilus file manager. Please run the GNOME package playbook before this one.
+Makes some GNOME desktop config changes, including the addition of maximize and minimize buttons to window borders, and enabling permanent delete in Nautilus file manager. Please run the GNOME package playbook (`gnome_pkg`) before this one.
 
 ### `gnome_pkg.yml`
 
