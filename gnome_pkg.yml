@@ -1,0 +1,41 @@
+---
+- name: gnome-pkg.yml - additional packages for GNOME desktop
+  hosts: local
+  become: yes
+  
+  tasks:
+    - name: Update Arch
+      pacman:
+        update_cache: yes
+        upgrade: yes
+
+    - name: Remove unwanted packges
+      pacman:
+        name:
+          - gnome-calendar
+          - gnome-contacts
+          - gnome-shell-extensions
+          - evolution-data-server
+        state: absent
+        
+    - name: Install essential packages
+      pacman:
+        update_cache: yes
+        name:
+          - dconf-editor
+          - python-nautilus
+          - gnome-terminal
+          - gnome-themes-extra
+          - ghex
+          - eog
+          - gcolor3
+          - gedit
+          - gedit-plugins
+          - transmission-gtk
+        state: present
+
+    - name: Add current user to video group - workaround for https://gitlab.gnome.org/GNOME/snapshot/-/issues/48
+      user:
+        name: "{{ lookup('env', 'USER') }}"
+        groups: video
+        append: yes

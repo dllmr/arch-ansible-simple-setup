@@ -9,20 +9,10 @@
         update_cache: yes
         upgrade: yes
 
-    - name: Remove unwanted packges
-      pacman:
-        name:
-          - gnome-calendar
-          - gnome-contacts
-          - gnome-shell-extensions
-          - evolution-data-server
-        state: absent
-        
     - name: Install essential packages
       pacman:
         update_cache: yes
         name:
-          - dconf-editor
           - usbutils
           - bluez-utils
           - fwupd
@@ -35,12 +25,7 @@
           - flatpak
           - cups
           - cups-pdf
-          - gnome-terminal
-          - gnome-themes-extra
-          - python-nautilus
           - catfish
-          - ghex
-          - eog
           - fastfetch
           - base-devel
           - git
@@ -48,9 +33,6 @@
           - imagemagick
           - gimp
           - inkscape
-          - gcolor3
-          - gedit
-          - gedit-plugins
           - glow
           - libreoffice-fresh
           - libreoffice-fresh-en-gb
@@ -71,7 +53,6 @@
           - thunderbird-i18n-en-gb
           - filezilla
           - remmina
-          - transmission-gtk
           - python-psutil
           - android-tools
           - android-udev
@@ -82,9 +63,3 @@
         name: cups
         state: started
         enabled: yes
-        
-    - name: Add current user to video group - workaround for https://gitlab.gnome.org/GNOME/snapshot/-/issues/48
-      user:
-        name: "{{ lookup('env', 'USER') }}"
-        groups: video
-        append: yes
