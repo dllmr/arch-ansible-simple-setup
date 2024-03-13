@@ -38,8 +38,6 @@ Select only the playbooks you need from this list. The first one is probably of 
 ### `core.yml`
 Installs a base set of packages from the mainstream Arch repos, inclusing Firefox, LibreOffice, GIMP, VLC and others.
 
-Also removes some packages that are part of the default GNOME install, but which I will not be using.
-
 ### `aur.yml`
 Installs packages from the Arch User Repository (AUR), including Chrome, VS Code and others.
 
@@ -57,7 +55,11 @@ Installs a couple of games from mainstream Arch repos.
 Installs packages for .NET development. Most likely you won't want these, but I need them for some of my development work.
 
 ### `gnome_conf.yml`
-Makes some GNOME desktop config changes, including the addition of maximize and minimize buttons to window borders, and enabling permanent delete in Nautilus file manager.
+Makes some GNOME desktop config changes, including the addition of maximize and minimize buttons to window borders, and enabling permanent delete in Nautilus file manager. Please run the GNOME package playbook before this one.
+
+### `gnome_pkg.yml`
+
+Installs some packages that are specific to GNOME. Also removes some unwanted packages that are part of the default GNOME install.
 
 ### `kvm_qemu.yml`
 Installs packages for virtualization support.
