@@ -28,5 +28,6 @@
           - dynalist-desktop
           - obsidian
           - get_iplayer
+          - uxplay
         state: present
         use: yay
