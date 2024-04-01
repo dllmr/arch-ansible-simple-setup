@@ -12,5 +12,4 @@
           - com.anydesk.Anydesk
           - org.freeplane.App
           - org.qgis.qgis/x86_64/stable
-          - re.sonny.Workbench
         state: present

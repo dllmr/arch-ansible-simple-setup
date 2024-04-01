@@ -1,0 +1,12 @@
+---
+- name: gnome_flatpak.yml - install GNOME specific flatpaks
+  hosts: local
+  become: yes
+  
+  tasks:
+    - name: Install flatpaks
+      flatpak:
+        name:
+          - com.mattjakeman.ExtensionManager
+          - re.sonny.Workbench
+        state: present
