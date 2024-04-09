@@ -1,0 +1,26 @@
+---
+- name: kde-pkg.yml - additional packages for KDE Plasma desktop
+  hosts: local
+  become: yes
+  
+  tasks:
+    - name: Update Arch
+      pacman:
+        update_cache: yes
+        upgrade: yes
+
+    - name: Install essential packages
+      pacman:
+        update_cache: yes
+        name:
+          - kamoso
+          - krita
+          - spectacle
+          - transmission-qt
+        state: present
+
+    - name: Add current user to video group - see https://gitlab.gnome.org/GNOME/snapshot/-/issues/48
+      user:
+        name: "{{ lookup('env', 'USER') }}"
+        groups: video
+        append: yes
