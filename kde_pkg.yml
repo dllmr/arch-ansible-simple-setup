@@ -17,6 +17,13 @@
           - krita
           - spectacle
           - transmission-qt
+          - gwenview
+          - qt6-imageformats
+          - kimageformats
+          - kdenlive
+          - kid3
+          - k3b
+          - dvd+rw-tools
         state: present
 
     - name: Add current user to video group - see https://gitlab.gnome.org/GNOME/snapshot/-/issues/48
