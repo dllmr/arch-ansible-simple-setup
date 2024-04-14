@@ -27,6 +27,7 @@
           - cups-pdf
           - catfish
           - fastfetch
+          - nvtop
           - base-devel
           - git
           - bitwarden
