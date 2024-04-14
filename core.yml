@@ -47,6 +47,7 @@
           - streamlink
           - yt-dlp
           - audacity
+          - sox
           - firefox
           - firefox-i18n-en-gb
           - thunderbird
