@@ -18,8 +18,11 @@
           - spectacle
           - okular
           - yakuake
+          - okteta
           - transmission-qt
+          - tokodon
           - gwenview
+          - plasmatube
           - qt6-imageformats
           - kimageformats
           - kdenlive
