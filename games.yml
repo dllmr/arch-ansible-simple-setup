@@ -15,6 +15,5 @@
         name:
           - openttd
           - openttd-opengfx
-          - openttd-openmsx
           - openttd-opensfx
         state: present
