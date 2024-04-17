@@ -13,3 +13,10 @@
           - org.freeplane.App
           - org.qgis.qgis/x86_64/stable
         state: present
+
+    - name: Ensure GNOME flatpaks look good even when running with other DEs
+      pacman:
+        update_cache: yes
+        name:
+          - xdg-desktop-portal-gtk
+        state: present
