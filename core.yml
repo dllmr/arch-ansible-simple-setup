@@ -18,6 +18,7 @@
           - fwupd
           - fwupd-efi
           - p7zip
+          - unzip
           - ripgrep
           - ripgrep-all
           - xclip
@@ -29,6 +30,9 @@
           - fastfetch
           - nvtop
           - base-devel
+          - clang
+          - cmake
+          - ninja
           - git
           - bitwarden
           - imagemagick
