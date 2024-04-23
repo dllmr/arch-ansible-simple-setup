@@ -13,6 +13,7 @@
       pacman:
         update_cache: yes
         name:
+          - dolphin-plugins
           - kamoso
           - krita
           - spectacle
