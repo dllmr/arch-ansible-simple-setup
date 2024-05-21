@@ -17,6 +17,7 @@
           - bluez-utils
           - fwupd
           - fwupd-efi
+          - bind
           - p7zip
           - unzip
           - ripgrep
