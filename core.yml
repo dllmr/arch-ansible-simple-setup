@@ -42,6 +42,9 @@
           - glow
           - libreoffice-fresh
           - libreoffice-fresh-en-gb
+          - hunspell
+          - hunspell-en_gb
+          - hunspell-en_us
           - scribus
           - pdfarranger
           - img2pdf
