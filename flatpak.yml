@@ -10,7 +10,6 @@
           - com.github.tchx84.Flatseal
           - io.github.flattool.Warehouse
           - com.anydesk.Anydesk
-          - org.freeplane.App
           - org.qgis.qgis/x86_64/stable
         state: present
 
