@@ -37,6 +37,7 @@
           - cmake
           - ninja
           - git
+          - jq
           - bitwarden
           - imagemagick
           - gimp
