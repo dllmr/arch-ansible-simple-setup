@@ -26,12 +26,12 @@
           - transmission-qt
           - tokodon
           - gwenview
-          - plasmatube
           - qt6-imageformats
           - kimageformats
           - kdenlive
           - kid3
           - k3b
+          - partitionmanager
           - dvd+rw-tools
         state: present
 

@@ -17,6 +17,8 @@
           - bluez-utils
           - fwupd
           - fwupd-efi
+          - hwinfo
+          - dosfstools
           - bind
           - p7zip
           - unzip
