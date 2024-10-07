@@ -48,6 +48,8 @@
           - hunspell
           - hunspell-en_gb
           - hunspell-en_us
+          - hyphen
+          - hyphen-en
           - scribus
           - pdfarranger
           - img2pdf
