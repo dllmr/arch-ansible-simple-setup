@@ -74,6 +74,7 @@
           - android-tools
           - android-udev
           - ttf-opensans
+          - wl-clipboard
           - freeplane
           - jre11-openjdk
         state: present
