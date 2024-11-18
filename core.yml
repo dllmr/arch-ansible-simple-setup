@@ -13,6 +13,7 @@
       pacman:
         update_cache: yes
         name:
+          - less
           - usbutils
           - bluez-utils
           - fwupd
