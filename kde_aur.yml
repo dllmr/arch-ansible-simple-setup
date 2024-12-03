@@ -10,6 +10,6 @@
     - name: Install AUR packages using yay
       kewlfft.aur.aur:
         name:
-          - kdeplasma-arch-update-notifier-git
+          - plasma6-applets-arch-update-notifier
         state: present
         use: yay
