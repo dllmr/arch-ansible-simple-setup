@@ -71,6 +71,7 @@
           - thunderbird-i18n-en-gb
           - filezilla
           - remmina
+          - uv
           - python-psutil
           - android-tools
           - android-udev
