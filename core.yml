@@ -38,6 +38,7 @@
           - cmake
           - ninja
           - git
+          - difftastic
           - jq
           - bitwarden
           - imagemagick
