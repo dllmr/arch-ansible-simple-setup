@@ -11,7 +11,7 @@
       kewlfft.aur.aur:
         name:
           - paru-bin
-          - pamac-all
+          - pamac-aur
           - google-chrome
           - visual-studio-code-bin
           - typora
