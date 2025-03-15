@@ -33,6 +33,7 @@
           - catfish
           - fastfetch
           - nvtop
+          - geoclue
           - base-devel
           - clang
           - cmake
