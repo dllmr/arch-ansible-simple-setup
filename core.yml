@@ -20,6 +20,7 @@
           - fwupd-efi
           - hwinfo
           - dosfstools
+          - gocryptfs
           - bind
           - p7zip
           - unzip
