@@ -12,6 +12,7 @@
         name:
           - paru-bin
           - pamac-aur
+          - downgrade
           - google-chrome
           - visual-studio-code-bin
           - typora
