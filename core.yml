@@ -29,6 +29,7 @@
           - xclip
           - pacman-contrib
           - flatpak
+          - libappimage
           - cups
           - cups-pdf
           - catfish
