@@ -33,6 +33,7 @@
           - libappimage
           - cups
           - cups-pdf
+          - system-config-printer
           - catfish
           - fastfetch
           - nvtop
