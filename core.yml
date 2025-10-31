@@ -13,6 +13,7 @@
       pacman:
         update_cache: yes
         name:
+          - tree
           - less
           - man-db
           - usbutils
@@ -87,8 +88,6 @@
           - android-udev
           - ttf-opensans
           - wl-clipboard
-          - freeplane
-          - jre11-openjdk
         state: present
 
     - name: Start and enable CUPS service
