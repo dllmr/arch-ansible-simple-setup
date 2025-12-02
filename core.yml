@@ -71,6 +71,8 @@
           - vlc
           - streamlink
           - yt-dlp
+          - yt-dlp-ejs
+          - deno
           - audacity
           - sox
           - atomicparsley
