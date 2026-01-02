@@ -68,10 +68,9 @@
           - pdftk                      # PDF toolkit
           - celluloid                  # media player (mpv GUI)
           - mpv                        # media player
-          - vlc                        # media player
           - streamlink                 # stream extractor
           - yt-dlp                     # video downloader
-          - yt-dlp-ejs                 # yt-dlp extractor support (EJS)
+          - yt-dlp-ejs                 # yt-dlp JavaScript support
           - deno                       # JavaScript/TypeScript runtime
           - audacity                   # audio editor
           - sox                        # audio processing tool

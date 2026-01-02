@@ -10,7 +10,7 @@
     - name: Install AUR packages using yay
       kewlfft.aur.aur:
         name:
-          - paru-bin                # AUR helper (binary)
+          - paru                    # AUR helper
           - pamac-aur               # GUI package manager for AUR
           - downgrade               # downgrade Arch packages
           - google-chrome           # Google Chrome browser
@@ -20,7 +20,6 @@
           - dropbox                 # Dropbox client
           - wike                    # Wikipedia reader
           - zoom                    # Zoom video client
-          - teams-for-linux         # Microsoft Teams client
           - sublime-merge           # Git client from Sublime
           - nordvpn-bin             # NordVPN client (binary)
           - menulibre               # desktop menu editor

@@ -14,10 +14,15 @@
     - name: Install flatpaks
       flatpak:
         name:
-          - com.github.tchx84.Flatseal          # manage Flatpak app permissions
-          - io.github.flattool.Warehouse        # Flatpak package manager GUI
-          - com.anydesk.Anydesk                 # remote desktop client
-          - org.qgis.qgis/x86_64/stable         # GIS and mapping suite
+          - com.github.tchx84.Flatseal                # manage Flatpak app permissions
+          - io.github.flattool.Warehouse              # Flatpak package manager GUI
+          - com.anydesk.Anydesk                       # remote desktop client
+          - com.github.IsmaelMartinez.teams_for_linux # Microsoft Teams client
+          - org.qgis.qgis/x86_64/stable               # GIS and mapping suite
+          - org.gnome.Papers                          # GNOME document viewer
+          - org.gnome.gitlab.somas.Apostrophe         # Markdown editor
+          - com.github.zocker_160.SyncThingy          # Syncthing GUI client
+          - org.stellarium.Stellarium                 # planetarium software
         state: present
         remote: flathub
         method: system
