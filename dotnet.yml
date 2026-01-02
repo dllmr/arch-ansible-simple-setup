@@ -17,7 +17,4 @@
           - dotnet-runtime             # current .NET runtime
           - dotnet-sdk                 # current .NET SDK
           - dotnet-targeting-pack      # current targeting pack
-          - dotnet-runtime-6.0         # .NET 6 runtime
-          - dotnet-sdk-6.0             # .NET 6 SDK
-          - dotnet-targeting-pack-6.0  # .NET 6 targeting pack
         state: present        
