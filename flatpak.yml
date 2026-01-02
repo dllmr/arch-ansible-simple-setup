@@ -14,10 +14,10 @@
     - name: Install flatpaks
       flatpak:
         name:
-          - com.github.tchx84.Flatseal
-          - io.github.flattool.Warehouse
-          - com.anydesk.Anydesk
-          - org.qgis.qgis/x86_64/stable
+          - com.github.tchx84.Flatseal          # manage Flatpak app permissions
+          - io.github.flattool.Warehouse        # Flatpak package manager GUI
+          - com.anydesk.Anydesk                 # remote desktop client
+          - org.qgis.qgis/x86_64/stable         # GIS and mapping suite
         state: present
         remote: flathub
         method: system
@@ -26,5 +26,5 @@
       pacman:
         update_cache: yes
         name:
-          - xdg-desktop-portal-gtk
+          - xdg-desktop-portal-gtk  # GTK portal backend
         state: present

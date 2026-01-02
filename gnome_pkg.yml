@@ -12,27 +12,27 @@
     - name: Remove unwanted packges
       pacman:
         name:
-          - gnome-calendar
-          - gnome-contacts
-          - gnome-shell-extensions
-          - evolution-data-server
+          - gnome-calendar          # GNOME calendar app
+          - gnome-contacts          # GNOME contacts app
+          - gnome-shell-extensions  # extra GNOME extensions bundle
+          - evolution-data-server   # Evolution data services
         state: absent
         
     - name: Install essential packages
       pacman:
         update_cache: yes
         name:
-          - dconf-editor
-          - python-nautilus
-          - gnome-terminal
-          - gnome-themes-extra
-          - ghex
-          - eog
-          - kooha
-          - gcolor3
-          - gedit
-          - gedit-plugins
-          - transmission-gtk
+          - dconf-editor        # GNOME settings editor
+          - python-nautilus     # Nautilus Python extensions
+          - gnome-terminal      # GNOME terminal
+          - gnome-themes-extra  # extra GNOME themes
+          - ghex                # hex editor
+          - eog                 # image viewer
+          - kooha               # screen recorder
+          - gcolor3             # color picker
+          - gedit               # text editor
+          - gedit-plugins       # extra plugins for gedit
+          - transmission-gtk    # BitTorrent client (GTK)
         state: present
 
     - name: Add current user to video group - workaround for https://gitlab.gnome.org/GNOME/snapshot/-/issues/48

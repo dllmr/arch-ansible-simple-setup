@@ -13,7 +13,7 @@
       pacman:
         update_cache: yes
         name:
-          - openttd
-          - openttd-opengfx
-          - openttd-opensfx
+          - openttd           # OpenTTD game
+          - openttd-opengfx   # OpenTTD free graphics set
+          - openttd-opensfx   # OpenTTD free sound set
         state: present

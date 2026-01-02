@@ -5,11 +5,11 @@
   tasks:
     - name: Install yay to get started
       kewlfft.aur.aur:
-        name: yay
+        name: yay # AUR helper
 
     - name: Install AUR packages using yay
       kewlfft.aur.aur:
         name:
-          - plasma6-applets-arch-update-notifier
+          - plasma6-applets-arch-update-notifier   # Arch update notifier widget
         state: present
         use: yay

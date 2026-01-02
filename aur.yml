@@ -5,30 +5,30 @@
   tasks:
     - name: Install yay to get started
       kewlfft.aur.aur:
-        name: yay
+        name: yay # AUR helper
 
     - name: Install AUR packages using yay
       kewlfft.aur.aur:
         name:
-          - paru-bin
-          - pamac-aur
-          - downgrade
-          - google-chrome
-          - visual-studio-code-bin
-          - typora
-          - pandoc-bin
-          - dropbox
-          - wike
-          - zoom
-          - teams-for-linux
-          - sublime-merge
-          - nordvpn-bin
-          - menulibre
-          - localsend-bin
-          - spotify
-          - dynalist-desktop
-          - obsidian
-          - get_iplayer
-          - uxplay
+          - paru-bin                # AUR helper (binary)
+          - pamac-aur               # GUI package manager for AUR
+          - downgrade               # downgrade Arch packages
+          - google-chrome           # Google Chrome browser
+          - visual-studio-code-bin  # VS Code (binary build)
+          - typora                  # Markdown editor
+          - pandoc-bin              # document converter (binary)
+          - dropbox                 # Dropbox client
+          - wike                    # Wikipedia reader
+          - zoom                    # Zoom video client
+          - teams-for-linux         # Microsoft Teams client
+          - sublime-merge           # Git client from Sublime
+          - nordvpn-bin             # NordVPN client (binary)
+          - menulibre               # desktop menu editor
+          - localsend-bin           # LocalSend file transfer
+          - spotify                 # Spotify desktop client
+          - dynalist-desktop        # Dynalist outliner
+          - obsidian                # Obsidian notes app
+          - get_iplayer             # BBC iPlayer downloader
+          - uxplay                  # AirPlay receiver
         state: present
         use: yay

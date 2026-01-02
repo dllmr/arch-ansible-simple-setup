@@ -5,11 +5,11 @@
   tasks:
     - name: Install yay to get started
       kewlfft.aur.aur:
-        name: yay
+        name: yay # AUR helper
 
     - name: Install virtio drivers for Windows
       kewlfft.aur.aur:
         name:
-          - virtio-win
+          - virtio-win   # virtio driver ISO for Windows guests
         state: present
         use: yay

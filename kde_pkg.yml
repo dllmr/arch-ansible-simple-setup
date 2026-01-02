@@ -13,33 +13,33 @@
       pacman:
         update_cache: yes
         name:
-          - khelpcenter
-          - dolphin-plugins
-          - kio-gdrive
-          - kamoso
-          - kcalc
-          - kcharselect
-          - krita
-          - kolourpaint
-          - spectacle
-          - okular
-          - okteta
-          - kfind
-          - kdf
-          - filelight
-          - konqueror
-          - transmission-qt
-          - tokodon
-          - gwenview
-          - qt6-imageformats
-          - kimageformats
-          - kdenlive
-          - kid3
-          - k3b
-          - haruna
-          - partitionmanager
-          - dvd+rw-tools
-          - isoimagewriter
+          - khelpcenter        # KDE help center
+          - dolphin-plugins    # extra Dolphin plugins
+          - kio-gdrive         # Google Drive integration
+          - kamoso             # webcam tool
+          - kcalc              # calculator
+          - kcharselect        # character picker
+          - krita              # digital painting
+          - kolourpaint        # simple paint app
+          - spectacle          # screenshot tool
+          - okular             # document viewer
+          - okteta             # hex editor
+          - kfind              # file search
+          - kdf                # disk usage tool
+          - filelight          # disk usage visualizer
+          - konqueror          # web/file browser
+          - transmission-qt    # BitTorrent client (Qt)
+          - tokodon            # Mastodon client
+          - gwenview           # image viewer
+          - qt6-imageformats   # Qt image format plugins
+          - kimageformats      # KDE image format plugins
+          - kdenlive           # video editor
+          - kid3               # audio tag editor
+          - k3b                # disc burner
+          - haruna             # media player
+          - partitionmanager   # partition manager
+          - dvd+rw-tools       # DVD writing tools
+          - isoimagewriter     # USB ISO writer
         state: present
 
     - name: Add current user to video group - see https://gitlab.gnome.org/GNOME/snapshot/-/issues/48

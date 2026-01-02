@@ -13,83 +13,83 @@
       pacman:
         update_cache: yes
         name:
-          - tree
-          - less
-          - man-db
-          - usbutils
-          - bluez-utils
-          - fwupd
-          - fwupd-efi
-          - hwinfo
-          - dosfstools
-          - gocryptfs
-          - bind
-          - p7zip
-          - unzip
-          - ripgrep
-          - ripgrep-all
-          - xclip
-          - pacman-contrib
-          - flatpak
-          - libappimage
-          - cups
-          - cups-pdf
-          - system-config-printer
-          - catfish
-          - fastfetch
-          - nvtop
-          - geoclue
-          - base-devel
-          - clang
-          - cmake
-          - ninja
-          - git
-          - just
-          - difftastic
-          - jq
-          - bc
-          - bitwarden
-          - imagemagick
-          - jhead
-          - gimp
-          - inkscape
-          - glow
-          - libreoffice-fresh
-          - libreoffice-fresh-en-gb
-          - hunspell
-          - hunspell-en_gb
-          - hunspell-en_us
-          - hyphen
-          - hyphen-en
-          - scribus
-          - pdfarranger
-          - img2pdf
-          - mupdf
-          - pdftk
-          - celluloid
-          - mpv
-          - vlc
-          - streamlink
-          - yt-dlp
-          - yt-dlp-ejs
-          - deno
-          - audacity
-          - sox
-          - atomicparsley
-          - cdrdao
-          - firefox
-          - firefox-i18n-en-gb
-          - thunderbird
-          - thunderbird-i18n-en-gb
-          - filezilla
-          - remmina
-          - freerdp
-          - uv
-          - python-psutil
-          - android-tools
-          - android-udev
-          - ttf-opensans
-          - wl-clipboard
+          - tree                       # directory tree viewer
+          - less                       # terminal pager
+          - man-db                     # manual pages database
+          - usbutils                   # USB utilities (lsusb)
+          - bluez-utils                # Bluetooth utilities
+          - fwupd                      # firmware update service
+          - fwupd-efi                  # UEFI support for fwupd
+          - hwinfo                     # hardware info tool
+          - dosfstools                 # FAT filesystem tools
+          - gocryptfs                  # encrypted filesystem
+          - bind                       # DNS tools (dig, nslookup)
+          - p7zip                      # 7z archive tools
+          - unzip                      # unzip utility
+          - ripgrep                    # fast text search
+          - ripgrep-all                # search in PDFs/docs
+          - xclip                      # X clipboard CLI
+          - pacman-contrib             # pacman helper tools
+          - flatpak                    # Flatpak runtime
+          - libappimage                # AppImage runtime library
+          - cups                       # printing system
+          - cups-pdf                   # PDF printer backend
+          - system-config-printer      # printer setup GUI
+          - catfish                    # file search UI
+          - fastfetch                  # system info tool
+          - nvtop                      # GPU monitor
+          - geoclue                    # location service
+          - base-devel                 # build toolchain group
+          - clang                      # C/C++ compiler
+          - cmake                      # build system generator
+          - ninja                      # build tool
+          - git                        # version control
+          - just                       # command runner
+          - difftastic                 # structural diff tool
+          - jq                         # JSON processor
+          - bc                         # calculator
+          - bitwarden                  # password manager
+          - imagemagick                # image conversion tools
+          - jhead                      # JPEG metadata tool
+          - gimp                       # image editor
+          - inkscape                   # vector graphics editor
+          - glow                       # terminal Markdown viewer
+          - libreoffice-fresh          # office suite
+          - libreoffice-fresh-en-gb    # UK English locale
+          - hunspell                   # spell checker
+          - hunspell-en_gb             # UK English dictionary
+          - hunspell-en_us             # US English dictionary
+          - hyphen                     # hyphenation dictionaries
+          - hyphen-en                  # English hyphenation
+          - scribus                    # desktop publishing
+          - pdfarranger                # PDF page arranger
+          - img2pdf                    # images to PDF
+          - mupdf                      # lightweight PDF viewer
+          - pdftk                      # PDF toolkit
+          - celluloid                  # media player (mpv GUI)
+          - mpv                        # media player
+          - vlc                        # media player
+          - streamlink                 # stream extractor
+          - yt-dlp                     # video downloader
+          - yt-dlp-ejs                 # yt-dlp extractor support (EJS)
+          - deno                       # JavaScript/TypeScript runtime
+          - audacity                   # audio editor
+          - sox                        # audio processing tool
+          - atomicparsley              # MP4 metadata tool
+          - cdrdao                     # CD recording tools
+          - firefox                    # web browser
+          - firefox-i18n-en-gb         # Firefox UK English locale
+          - thunderbird                # email client
+          - thunderbird-i18n-en-gb     # Thunderbird UK English locale
+          - filezilla                  # FTP client
+          - remmina                    # remote desktop client
+          - freerdp                    # RDP library and tools
+          - uv                         # fast Python package manager
+          - python-psutil              # Python system utilities
+          - android-tools              # adb and fastboot tools
+          - android-udev               # udev rules for Android devices
+          - ttf-opensans               # Open Sans font
+          - wl-clipboard               # Wayland clipboard CLI
         state: present
 
     - name: Start and enable CUPS service

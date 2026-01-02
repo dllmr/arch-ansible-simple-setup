@@ -5,14 +5,14 @@
   tasks:
     - name: Install yay to get started
       kewlfft.aur.aur:
-        name: yay
+        name: yay # AUR helper
 
     - name: Install AUR packages using yay
       kewlfft.aur.aur:
         name:
-          - gnome-network-displays
-          - kora-icon-theme
-          - nautilus-dropbox
-          - turtle
+          - gnome-network-displays   # Miracast/Wi-Fi display support
+          - kora-icon-theme          # icon theme
+          - nautilus-dropbox         # Dropbox integration for Nautilus
+          - turtle                   # Git integration for Nautilus
         state: present
         use: yay

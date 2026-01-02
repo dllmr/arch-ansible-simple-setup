@@ -12,14 +12,14 @@
     - name: Install necessary packages for KVM and QEMU
       pacman:
         name:
-          - iptables-nft
-          - qemu-desktop
-          - virt-manager
-          - virt-viewer
-          - dnsmasq
-          - vde2
-          - bridge-utils
-          - openbsd-netcat
+          - iptables-nft    # nftables backend for iptables
+          - qemu-desktop    # QEMU system emulator
+          - virt-manager    # libvirt VM manager GUI
+          - virt-viewer     # VM console viewer
+          - dnsmasq         # DHCP/DNS for libvirt networks
+          - vde2            # virtual network switch
+          - bridge-utils    # network bridge tools
+          - openbsd-netcat  # netcat utility
         state: present
         
     - name: Start and enable libvirtd service

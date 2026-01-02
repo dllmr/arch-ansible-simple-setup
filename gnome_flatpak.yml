@@ -14,8 +14,8 @@
     - name: Install flatpaks
       flatpak:
         name:
-          - com.mattjakeman.ExtensionManager
-          - re.sonny.Workbench
+          - com.mattjakeman.ExtensionManager   # manage GNOME Shell extensions
+          - re.sonny.Workbench                 # GNOME developer sandbox
         state: present
         remote: flathub
         method: system
