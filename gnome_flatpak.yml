@@ -4,9 +4,18 @@
   become: yes
   
   tasks:
+    - name: Ensure Flathub remote exists
+      flatpak_remote:
+        name: flathub
+        state: present
+        flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
+        method: system
+
     - name: Install flatpaks
       flatpak:
         name:
           - com.mattjakeman.ExtensionManager
           - re.sonny.Workbench
         state: present
+        remote: flathub
+        method: system

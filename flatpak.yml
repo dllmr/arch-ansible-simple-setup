@@ -4,6 +4,13 @@
   become: yes
   
   tasks:
+    - name: Ensure Flathub remote exists
+      flatpak_remote:
+        name: flathub
+        state: present
+        flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
+        method: system
+
     - name: Install flatpaks
       flatpak:
         name:
@@ -12,6 +19,8 @@
           - com.anydesk.Anydesk
           - org.qgis.qgis/x86_64/stable
         state: present
+        remote: flathub
+        method: system
 
     - name: Ensure GNOME flatpaks look good even when running with other DEs
       pacman:
