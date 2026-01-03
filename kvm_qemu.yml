@@ -1,6 +1,7 @@
 ---
 - name: kvm_qemu.yml - set up KVM and QEMU for virtualization
-  hosts: local
+  hosts: localhost
+  connection: local
   become: yes
 
   tasks:

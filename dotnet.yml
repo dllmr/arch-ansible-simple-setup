@@ -1,6 +1,7 @@
 ---
 - name: dotnet.yml - packages for .NET execution and development
-  hosts: local
+  hosts: localhost
+  connection: local
   become: yes
   
   tasks:

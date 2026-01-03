@@ -1,6 +1,7 @@
 ---
 - name: gnome_conf.yml - configure GNOME settings
-  hosts: local
+  hosts: localhost
+  connection: local
   gather_facts: no
   
   tasks:

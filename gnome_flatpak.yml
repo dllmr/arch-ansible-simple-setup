@@ -1,6 +1,7 @@
 ---
 - name: gnome_flatpak.yml - install GNOME specific flatpaks
-  hosts: local
+  hosts: localhost
+  connection: local
   become: yes
   
   tasks:

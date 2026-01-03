@@ -1,6 +1,7 @@
 ---
 - name: kde-pkg.yml - additional packages for KDE Plasma desktop
-  hosts: local
+  hosts: localhost
+  connection: local
   become: yes
   
   tasks:

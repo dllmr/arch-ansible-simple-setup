@@ -1,6 +1,7 @@
 ---
 - name: flatpak.yml - install flatpaks
-  hosts: local
+  hosts: localhost
+  connection: local
   become: yes
   
   tasks:

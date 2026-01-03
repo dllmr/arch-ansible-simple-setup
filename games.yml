@@ -1,6 +1,7 @@
 ---
 - name: games.yml - a few games
-  hosts: local
+  hosts: localhost
+  connection: local
   become: yes
   
   tasks:

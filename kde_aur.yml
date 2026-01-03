@@ -1,6 +1,7 @@
 ---
 - name: kde_aur.yml - install KDE specific packages from AUR
-  hosts: local
+  hosts: localhost
+  connection: local
   
   tasks:
     - name: Install yay to get started

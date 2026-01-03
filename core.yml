@@ -1,6 +1,7 @@
 ---
 - name: core.yml - Arch Linux base setup
-  hosts: local
+  hosts: localhost
+  connection: local
   become: yes
   
   tasks:

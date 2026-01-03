@@ -1,6 +1,7 @@
 ---
 - name: gnome-pkg.yml - additional packages for GNOME desktop
-  hosts: local
+  hosts: localhost
+  connection: local
   become: yes
   
   tasks:

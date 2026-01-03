@@ -1,0 +1,26 @@
+---
+- name: flatpak-clean.yml - remove flatpaks and remotes
+  hosts: localhost
+  connection: local
+  become: yes
+
+  tasks:
+    - name: Uninstall all flatpaks (apps and runtimes)
+      command: flatpak uninstall --all --assumeyes
+      register: flatpak_uninstall
+      changed_when: flatpak_uninstall.rc == 0 and (flatpak_uninstall.stdout | length > 0)
+      failed_when: false
+
+    - name: List flatpak remotes
+      command: flatpak remotes --columns=name
+      register: flatpak_remotes
+      changed_when: false
+      failed_when: false
+
+    - name: Remove flatpak remotes
+      flatpak_remote:
+        name: "{{ item }}"
+        state: absent
+        method: system
+      loop: "{{ flatpak_remotes.stdout_lines }}"
+      when: flatpak_remotes.stdout_lines | length > 0

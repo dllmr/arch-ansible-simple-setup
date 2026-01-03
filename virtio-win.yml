@@ -1,6 +1,7 @@
 ---
 - name: virtio-win.yml - install KVM/QEMU virtualization drivers for Windows
-  hosts: local
+  hosts: localhost
+  connection: local
   
   tasks:
     - name: Install yay to get started

@@ -1,6 +1,7 @@
 ---
 - name: gnome_aur.yml - install GNOME specific packages from AUR
-  hosts: local
+  hosts: localhost
+  connection: local
   
   tasks:
     - name: Install yay to get started
