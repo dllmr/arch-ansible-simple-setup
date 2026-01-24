@@ -16,6 +16,7 @@
         name:
           - tree                       # directory tree viewer
           - less                       # terminal pager
+          - fd                         # simple, fast file search
           - man-db                     # manual pages database
           - usbutils                   # USB utilities (lsusb)
           - bluez-utils                # Bluetooth utilities
