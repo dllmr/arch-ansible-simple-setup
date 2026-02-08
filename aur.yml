@@ -11,6 +11,7 @@
     - name: Install AUR packages using yay
       kewlfft.aur.aur:
         name:
+          - traur                   # AUR package scanner
           - paru                    # AUR helper
           - pamac-aur               # GUI package manager for AUR
           - downgrade               # downgrade Arch packages
