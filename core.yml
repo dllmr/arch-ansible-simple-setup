@@ -46,6 +46,7 @@
           - cmake                      # build system generator
           - ninja                      # build tool
           - git                        # version control
+          - github-cli                 # GitHub CLI tool
           - just                       # command runner
           - difftastic                 # structural diff tool
           - jq                         # JSON processor
