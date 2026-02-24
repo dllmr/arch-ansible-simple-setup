@@ -90,6 +90,7 @@
           - python-psutil              # Python system utilities
           - android-tools              # adb and fastboot tools
           - android-udev               # udev rules for Android devices
+          - jadx                       # Android decompiler
           - ttf-opensans               # Open Sans font
           - wl-clipboard               # Wayland clipboard CLI
         state: present
