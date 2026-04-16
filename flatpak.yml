@@ -24,6 +24,8 @@
           - org.gnome.gitlab.somas.Apostrophe         # Markdown editor
           - com.github.zocker_160.SyncThingy          # Syncthing GUI client
           - org.stellarium.Stellarium                 # planetarium software
+          - com.github.dail8859.NotepadNext           # Notepad++ alternative
+          - io.typora.Typora                          # Markdown editor
         state: present
         remote: flathub
         method: system

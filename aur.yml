@@ -17,7 +17,6 @@
           - downgrade               # downgrade Arch packages
           - google-chrome           # Google Chrome browser
           - visual-studio-code-bin  # VS Code (binary build)
-          - typora                  # Markdown editor
           - pandoc-bin              # document converter (binary)
           - dropbox                 # Dropbox client
           - wike                    # Wikipedia reader

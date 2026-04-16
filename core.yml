@@ -93,6 +93,7 @@
           - jadx                       # Android decompiler
           - ttf-opensans               # Open Sans font
           - wl-clipboard               # Wayland clipboard CLI
+          - deskflow                   # software KVM
         state: present
 
     - name: Start and enable CUPS service
@@ -100,3 +101,12 @@
         name: cups
         state: started
         enabled: yes
+
+    - name: Allow passwordless pacman for AUR helpers
+      copy:
+        dest: /etc/sudoers.d/10-pacman
+        content: "{{ ansible_env.SUDO_USER }} ALL=(ALL) NOPASSWD: /usr/bin/pacman\n"
+        owner: root
+        group: root
+        mode: '0440'
+        validate: 'visudo -cf %s'
