@@ -11,24 +11,15 @@
     - name: Install AUR packages using yay
       kewlfft.aur.aur:
         name:
+          # NOTE: chrome, vscode, zoom, sublime-merge, menulibre, localsend
+          # and spotify migrated to Flathub (see flatpak.yml).
           - traur-bin               # AUR package scanner
           - paru                    # AUR helper
           - pamac-aur               # GUI package manager for AUR
           - downgrade               # downgrade Arch packages
-          - google-chrome           # Google Chrome browser
-          - visual-studio-code-bin  # VS Code (binary build)
           - pandoc-bin              # document converter (binary)
           - dropbox                 # Dropbox client
-          - wike                    # Wikipedia reader
-          - zoom                    # Zoom video client
-          - sublime-merge           # Git client from Sublime
           - nordvpn-bin             # NordVPN client (binary)
-          - menulibre               # desktop menu editor
-          - localsend-bin           # LocalSend file transfer
-          - spotify                 # Spotify desktop client
-          - dynalist-desktop        # Dynalist outliner
-          - obsidian                # Obsidian notes app
           - get_iplayer             # BBC iPlayer downloader
-          - uxplay                  # AirPlay receiver
         state: present
         use: yay

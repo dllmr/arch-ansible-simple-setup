@@ -57,6 +57,7 @@
           - gimp                       # image editor
           - inkscape                   # vector graphics editor
           - glow                       # terminal Markdown viewer
+          - obsidian                   # Markdown notes app
           - libreoffice-fresh          # office suite
           - libreoffice-fresh-en-gb    # UK English locale
           - hunspell                   # spell checker
@@ -83,6 +84,7 @@
           - firefox-i18n-en-gb         # Firefox UK English locale
           - thunderbird                # email client
           - thunderbird-i18n-en-gb     # Thunderbird UK English locale
+          - wike                       # Wikipedia reader
           - filezilla                  # FTP client
           - remmina                    # remote desktop client
           - freerdp                    # RDP library and tools

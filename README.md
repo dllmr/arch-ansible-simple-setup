@@ -1,8 +1,8 @@
 # arch-ansible-simple-setup
-A collection of Ansible playbooks for quick Arch Linux setup post-install. Demonstrates package installation from the mainstream Arch repos, AUR and Flatpak. Also demonstrates GNOME desktop settings changes.
+A collection of Ansible playbooks for quick Arch Linux setup post-install. Demonstrates package installation from the mainstream Arch repos, AUR and Flatpak.
 
 ## Important Notes
-These playbooks were set up for my specific requirements. These requirements include use of the GNOME desktop, plus some locale packages for UK use. You will almost certainly want to modify these playbooks before using them!
+These playbooks were set up for my specific requirements. These requirements include use of the KDE Plasma desktop, plus some locale packages for UK use. You will almost certainly want to modify these playbooks before using them!
 
 However, they should be easy to understand and provide an excellent starting point for getting your Arch system exactly how you want it.
 
@@ -36,34 +36,32 @@ The `-K` option leads to a prompt for the root password for package installation
 Select only the playbooks you need from this list. The first one is probably of most interest.
 
 ### `core.yml`
-Installs a base set of packages from the mainstream Arch repos, inclusing Firefox, LibreOffice, GIMP, VLC and others.
+Installs a base set of packages from the mainstream Arch repos, including Firefox, LibreOffice, GIMP, mpv and others.
 
 ### `aur.yml`
-Installs packages from the Arch User Repository (AUR), including Chrome, VS Code and others.
+Installs packages from the Arch User Repository (AUR), including Dropbox, NordVPN and a few AUR helper/management tools.
 
 This playbook has an additional prerequisite to allow Ansible to interact with the AUR. The `ansible-aur` collection should first be installed using:
 
 `ansible-galaxy collection install kewlfft.aur`
 
 ### `flatpak.yml`
-Installs a small number of Flatpaks.
+Installs a range of Flatpak applications, including several (Chrome, VS Code, Spotify, Zoom and others) preferred as Flatpaks rather than from the AUR.
+
+### `flatpak-clean.yml`
+Removes **all** installed Flatpaks (apps and runtimes) and any configured Flatpak remotes. This is destructive and wipes everything rather than cleaning selectively - useful for resetting Flatpak to a fresh state.
+
+### `kde_pkg.yml`
+Installs additional packages from the mainstream Arch repos for the KDE Plasma desktop, including Krita, Kdenlive, Okular, Dolphin plugins and various KDE utilities. Also adds the current user to the `video` group.
+
+### `kde_aur.yml`
+Installs KDE-specific packages from the AUR. This playbook has the same `ansible-aur` collection prerequisite as `aur.yml` above.
 
 ### `games.yml`
 Installs a couple of games from mainstream Arch repos.
 
 ### `dotnet.yml`
 Installs packages for .NET development. In most cases these will not be needed.
-
-### `gnome_aur.yml`
-
-Installs some packages from the AUR that are specific to GNOME. Please run the GNOME package playbook (`gnome_pkg`) before this one. The `ansible-aur` collection should also be installed - see above.
-
-### `gnome_conf.yml`
-Makes some GNOME desktop config changes, including the addition of maximize and minimize buttons to window borders, and enabling permanent delete in Nautilus file manager. Please run the GNOME package playbook (`gnome_pkg`) before this one.
-
-### `gnome_pkg.yml`
-
-Installs some packages that are specific to GNOME. Also removes some unwanted packages that are part of the default GNOME install.
 
 ### `kvm_qemu.yml`
 Installs packages for virtualization support.
