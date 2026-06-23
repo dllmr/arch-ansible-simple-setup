@@ -24,10 +24,7 @@
           - org.gnome.gitlab.somas.Apostrophe         # Markdown editor
           - com.github.zocker_160.SyncThingy          # Syncthing GUI client
           - org.stellarium.Stellarium                 # planetarium software
-          - com.github.dail8859.NotepadNext           # Notepad++ alternative
           - io.typora.Typora                          # Markdown editor
-          # Migrated from the AUR (see scripts/list-aur-packages.py); remove the
-          # matching entries from aur.yml once these are confirmed working.
           - ca.littlesvr.asunder                      # CD ripper/encoder (was AUR: asunder)
           - com.github.PintaProject.Pinta             # image editor (was AUR: pinta)
           - com.google.Chrome                         # Google Chrome browser (was AUR: google-chrome)
@@ -37,7 +34,6 @@
           - com.sublimemerge.App                      # Sublime Merge Git client (was AUR: sublime-merge)
           - com.visualstudio.code                     # VS Code editor (was AUR: visual-studio-code-bin)
           - io.github.Pithos                          # Pandora Radio client (was AUR: pithos)
-          - org.bluesabre.MenuLibre                   # menu editor (was AUR: menulibre)
           - org.localsend.localsend_app               # LocalSend file transfer (was AUR: localsend-bin)
           - us.zoom.Zoom                              # Zoom video client (was AUR: zoom)
         state: present
@@ -50,3 +46,14 @@
         name:
           - xdg-desktop-portal-gtk  # GTK portal backend
         state: present
+
+    - name: Allow Chrome to access ~/.local/share
+      ansible.builtin.command:
+        cmd: flatpak override --system com.google.Chrome --filesystem=~/.local/share
+      changed_when: false
+
+    - name: Allow VS Code to access KWallet on the session bus
+      ansible.builtin.command:
+        cmd: flatpak override --system com.visualstudio.code --talk-name=org.kde.KWallet.* --talk-name=org.kde.kwalletd6
+      changed_when: false
+
