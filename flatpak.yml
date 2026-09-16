@@ -31,7 +31,6 @@
           - com.google.EarthPro                       # Google Earth Pro (was AUR: google-earth-pro)
           - com.slack.Slack                           # Slack client (was AUR: slack-desktop)
           - com.spotify.Client                        # Spotify music client (was AUR: spotify)
-          - com.sublimemerge.App                      # Sublime Merge Git client (was AUR: sublime-merge)
           - com.visualstudio.code                     # VS Code editor (was AUR: visual-studio-code-bin)
           - io.github.Pithos                          # Pandora Radio client (was AUR: pithos)
           - org.localsend.localsend_app               # LocalSend file transfer (was AUR: localsend-bin)
