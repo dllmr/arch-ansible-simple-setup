@@ -32,7 +32,7 @@
           - konqueror          # web/file browser
           - transmission-qt    # BitTorrent client (Qt)
           - tokodon            # Mastodon client
-          - gwenview           # image viewer
+          - koko               # KDE Photos image viewer
           - qt6-imageformats   # Qt image format plugins
           - kimageformats      # KDE image format plugins
           - kdenlive           # video editor
